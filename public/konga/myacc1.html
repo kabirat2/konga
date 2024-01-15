@@ -1,0 +1,3137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="myaccStyle.css">
+    <script src="https://kit.fontawesome.com/19bbed0b06.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+   <style>
+        @media (max-width:1349px) {
+
+            .acc-informa {
+                margin-left: 60px;
+            }
+
+            /* input {
+                width: 85%
+            } */
+
+            .container h1 {
+                margin-left: 60px;
+            }
+
+            .accinfor-back {
+
+                width: 100%;
+                margin-left: 0px;
+            }
+
+            #loginButton {
+                width: 90%;
+            }
+
+            .acc-details {
+                width: 23%;
+            }
+
+            .container2 {
+                width: 55%;
+                /* margin-right: 100px; */
+            }
+
+            .details {
+                margin-left: 25px;
+                /* width: 80%; */
+            }
+
+            .detail {
+                margin-left: 25px;
+                /* width: 70%; */
+            }
+
+            #detai {
+                margin-left: 25px;
+                /* width: 70%; */
+
+            }
+
+            #deleteAcc {
+                background-color: #ffff;
+                width: 55%;
+                height: 60vh;
+            }
+
+            .checkbox {
+
+                width: 450px;
+                margin-left: 100px;
+            }
+
+            .button-delete button {
+                width: 500px;
+
+            }
+
+            .textdele h2 {
+                width: 500px;
+
+            }
+
+            .textdele h3 {
+                width: 500px;
+
+            }
+
+            .textdele p {
+                width: 500px;
+
+            }
+
+        }
+
+        @media (max-width:1300px) {
+
+            .acc-informa {
+                margin-left: 60px;
+            }
+
+            #loginButton {
+                width: 80%;
+            }
+
+            /* 
+            input {
+                width: 80%
+            } */
+
+            .container h1 {
+                margin-left: 60px;
+            }
+
+            .acc-details {
+                width: 22%;
+            }
+
+            .container2 {
+                width: 53%;
+                /* margin-left: 10px; */
+            }
+
+            .details {
+                margin-left: 20px;
+                /* width: 75%; */
+            }
+
+            .detail {
+                margin-left: 20px;
+                /* width: 75%; */
+            }
+
+            #detai {
+                margin-left: 20px;
+                /* width: 70%; */
+
+            }
+
+
+            #deleteAcc {
+                background-color: #ffff;
+                width: 53%;
+                height: 60vh;
+            }
+
+            .checkbox {
+
+                width: 450px;
+                margin-left: 100px;
+            }
+
+            .button-delete button {
+                width: 500px;
+
+            }
+
+            .textdele h2 {
+                width: 500px;
+
+            }
+
+            .textdele h3 {
+                width: 500px;
+
+            }
+
+            .textdele p {
+                width: 500px;
+
+            }
+
+        }
+
+        @media (max-width:1287px) {
+            #deleteAcc {
+                background-color: #ffff;
+                width: 52%;
+                height: 60vh;
+            }
+
+            .checkbox {
+
+                width: 450px;
+                margin-left: 100px;
+            }
+
+            .button-delete button {
+                width: 500px;
+
+            }
+
+
+            .textdele p {
+                width: 460px;
+
+            }
+        }
+
+        @media (max-width:1280px) {
+
+            .acc-informa {
+                margin-left: 60px;
+            }
+
+            /* input {
+                /* width: 75% */
+            /* } */
+
+            #loginButton {
+                width: 85%;
+            }
+
+            .container h1 {
+                margin-left: 60px;
+            }
+
+            .acc-details {
+                width: 21%;
+
+            }
+
+            .container2 {
+                width: 52%;
+            }
+
+            .details {
+                margin-left: 15px;
+                /* width: 65%; */
+            }
+
+            .detail {
+                margin-left: 15px;
+                /* width: 65%; */
+            }
+
+            #detai {
+                margin-left: 15px;
+                /* width: 65%; */
+
+            }
+
+
+            #deleteAcc {
+                background-color: #ffff;
+                width: 50%;
+                height: 60vh;
+            }
+
+            .checkbox {
+
+                width: 450px;
+                margin-left: 100px;
+            }
+
+            .button-delete button {
+                width: 500px;
+
+            }
+
+
+            .textdele p {
+                width: 430px;
+
+            }
+        }
+
+        @media (max-width:1278px) {
+
+            .acc-informa {
+                margin-left: 60px;
+            }
+
+            /* input {
+                width: 70%
+            } */
+
+            #loginButton {
+                width: 80%;
+            }
+
+            .container h1 {
+                margin-left: 60px;
+            }
+
+            .acc-details {
+                width: 20%;
+                /* margin-right: 50px; */
+            }
+
+            .container2 {
+                width: 51%;
+                /* margin-right: 20px; */
+            }
+
+            .details {
+                margin-left: 10px;
+                /* width: 63%; */
+            }
+
+            .detail {
+                margin-left: 10px;
+                /* width: 63%; */
+            }
+
+            #detai {
+                margin-left: 10px;
+                /* width: 63%; */
+
+            }
+
+            #deleteAcc {
+                background-color: #ffff;
+                width: 52%;
+                height: 60vh;
+            }
+
+            .checkbox {
+
+                width: 430px;
+                margin-left: 100px;
+            }
+
+            .button-delete button {
+                width: 395px;
+
+            }
+
+
+            .textdele p {
+                width: 395px;
+
+            }
+        }
+
+        @media (max-width:1250px) {
+
+            .acc-informa {
+                margin-left: 60px;
+            }
+
+            /* input {
+                width: 70%
+            } */
+
+            #loginButton {
+                width: 75%;
+            }
+
+            .container h1 {
+                margin-left: 60px;
+            }
+
+            .acc-details {
+                width: 19%;
+
+            }
+
+            .container2 {
+                width: 50%;
+            }
+
+            .details {
+                margin-left: 0px;
+                /* width: 60%; */
+            }
+
+            .detail {
+                margin-left: 0px;
+                /* width: 60%; */
+            }
+
+            #detai {
+                margin-left: 0px;
+                /* width: 60%; */
+
+            }
+
+            #deleteAcc {
+                background-color: #ffff;
+                width: 49%;
+                height: 60vh;
+            }
+
+            .checkbox {
+
+                width: 430px;
+                margin-left: 100px;
+            }
+
+            .button-delete button {
+                width: 395px;
+
+            }
+
+
+            .textdele p {
+                width: 380px;
+
+            }
+        }
+
+        @media (max-width:1140px) {
+            .details h3 {
+                width: 100px;
+            }
+
+            .details p {
+                width: 100px;
+                margin-left: 20px;
+
+            }
+
+            .detail h3 {
+                width: 130px;
+            }
+
+            .container2 {
+                width: 45%;
+            }
+
+
+            .detail p {
+                width: 150px;
+                margin-left: 20px;
+            }
+
+            #detai h3 {
+                width: 150px;
+            }
+
+            .acc-details {
+                width: 22%;
+
+            }
+
+            #detai p {
+                width: 150px;
+                margin-left: 20px;
+            }
+
+            .details {
+                margin-left: 5px;
+                /* width: 60%; */
+
+            }
+
+            .detail {
+                margin-left: 10px;
+                /* width: 60%; */
+
+            }
+
+            #detai {
+                margin-left: 5px;
+                /* width: 60%; */
+
+
+            }
+
+            #deleteAcc {
+                background-color: #ffff;
+                width: 46%;
+                height: 60vh;
+            }
+
+            .checkbox {
+
+                width: 300px;
+                margin-left: 100px;
+            }
+
+            .button-delete button {
+                width: 375px;
+
+            }
+
+
+            .textdele p {
+                width: 350px;
+
+            }
+        }
+
+        @media (max-width:1240px) {
+            .details h3 {
+                width: 100px;
+            }
+
+            .details p {
+                width: 150px;
+                margin-left: 30px;
+            }
+
+            .detail h3 {
+                width: 130px;
+            }
+
+            .detail p {
+                width: 150px;
+                margin-left: 25px;
+            }
+
+            #detai h3 {
+                width: 150px;
+            }
+
+            #detai p {
+                width: 150px;
+                margin-left: 30px;
+            }
+
+            .acc-details {
+                width: 18%;
+
+            }
+
+            .container2 {
+                width: 49%;
+            }
+
+            #deleteAcc {
+                background-color: #ffff;
+                width: 48%;
+                height: 60vh;
+            }
+
+            .checkbox {
+
+                width: 430px;
+                margin-left: 100px;
+            }
+
+            .button-delete button {
+                width: 380px;
+
+            }
+
+
+            .textdele p {
+                width: 370px;
+
+            }
+
+        }
+
+
+        @media (max-width: 1024px) {
+
+            .acc-informa {
+                margin-left: 60px;
+            }
+
+            /* input {
+                width: 70%
+            } */
+
+            .container h1 {
+                margin-left: 60px;
+            }
+
+            .acc-details {
+                width: 17%;
+
+            }
+
+            .container2 {
+                width: 46%;
+            }
+
+            .details {
+                line-height: 25px;
+            }
+
+            .detail {
+                line-height: 25px;
+            }
+
+            #detai {
+                line-height: 25px;
+
+            }
+
+            #input {
+                margin-left: 30px;
+                margin-top: 10px;
+                line-height: 25px;
+            }
+
+
+            #deleteAcc {
+                background-color: #ffff;
+                width: 45%;
+                height: 60vh;
+            }
+
+            .checkbox {
+
+                width: 300px;
+                margin-left: 100px;
+            }
+
+            .button-delete button {
+                width: 350px;
+
+            }
+
+
+            .textdele p {
+                width: 320px;
+
+            }
+        }
+
+        @media (max-width: 1180px) {
+
+            .acc-informa {
+                margin-left: 60px;
+            }
+
+            /* input {
+                width: 70%
+            } */
+
+            .container h1 {
+                margin-left: 60px;
+            }
+
+            .acc-details {
+                width: 18%;
+
+            }
+
+            .container2 {
+                width: 47%;
+            }
+
+
+
+
+            #input {
+                margin-left: 30px;
+                margin-top: 10px;
+                line-height: 25px;
+            }
+
+
+
+            #deleteAcc {
+                background-color: #ffff;
+                width: 47%;
+                height: 60vh;
+            }
+
+            .checkbox {
+
+                width: 430px;
+                margin-left: 100px;
+            }
+
+            .button-delete button {
+                width: 375px;
+
+            }
+
+
+            .textdele p {
+                width: 360px;
+
+            }
+        }
+
+
+        @media (max-width: 1080px) {
+
+            .acc-informa {
+                margin-left: 60px;
+            }
+
+            /* input {
+                width: 70%
+            } */
+
+            .container h1 {
+                margin-left: 60px;
+            }
+
+            .acc-details {
+                width: 18%;
+
+            }
+
+            .container2 {
+                width: 48%;
+            }
+
+
+
+
+            #input {
+                margin-left: 30px;
+                margin-top: 10px;
+                line-height: 25px;
+            }
+
+            #deleteAcc {
+                background-color: #ffff;
+                width: 46%;
+                height: 60vh;
+            }
+
+            .checkbox {
+
+                width: 300px;
+                margin-left: 100px;
+            }
+
+            .button-delete button {
+                width: 350px;
+
+            }
+
+
+            .textdele p {
+                width: 340px;
+
+            }
+        }
+
+        @media (max-width: 1000px) {
+
+            .acc-informa {
+                margin-left: 60px;
+            }
+
+            /* input {
+                width: 70%
+            } */
+
+            .container h1 {
+                margin-left: 60px;
+            }
+
+            .acc-details {
+                width: 17%;
+
+            }
+
+            .container2 {
+                width: 45%;
+            }
+
+            .details h3 {
+                width: 100px;
+            }
+
+            .details p {
+                width: 150px;
+                margin-left: 10px;
+            }
+
+            .detail h3 {
+                width: 130px;
+            }
+
+            .detail p {
+                width: 150px;
+                margin-left: 10px;
+            }
+
+            #detai h3 {
+                width: 150px;
+            }
+
+            #detai p {
+                width: 150px;
+                margin-left: 10px;
+            }
+
+
+
+
+            #input {
+                margin-left: 30px;
+                margin-top: 10px;
+                line-height: 25px;
+            }
+
+            #deleteAcc {
+                background-color: #ffff;
+                width: 44%;
+                height: 60vh;
+            }
+
+            .checkbox {
+
+                width: 300px;
+                margin-left: 100px;
+            }
+
+            .button-delete button {
+                width: 300px;
+
+            }
+
+
+            .textdele p {
+                width: 300px;
+
+            }
+        }
+
+        @media (max-width:768px) {
+            .acc-informa {
+                display: none;
+            }
+
+            .container2 {
+                background-color: #ffff;
+
+                height: 100vh;
+            }
+
+            /* input {
+                width: 50%;
+            } */
+
+            .container h1 {
+                font-size: 25px;
+                margin-top: 20px;
+                margin-left: 60px;
+            }
+
+            .checkbox {
+
+                width: 210px;
+                /* margin-left: 60px; */
+            }
+
+            .button-delete button {
+                width: 210px;
+                /* margin-left: 60px; */
+            }
+
+
+
+            .textdele p {
+                width: 210px;
+
+            }
+        }
+
+        @media (max-width:735px) {
+
+            .checkbox {
+
+                width: 180px;
+                margin-left: 20px;
+            }
+
+            .button-delete button {
+                width: 180px;
+                margin-left: 20px;
+            }
+
+            .textdele {
+                margin-left: 20px;
+            }
+
+            .textdele p {
+                width: 180px;
+
+            }
+
+            #deleteAcc {
+                background-color: #ffff;
+                width: 36%;
+                height: 60vh;
+            }
+        }
+
+        @media (max-width:940px) {
+
+
+
+            .acc-informa {
+                margin-left: 60px;
+            }
+
+            /* input {
+                width: 70%
+            } */
+
+            .container h1 {
+                margin-left: 60px;
+            }
+
+            .acc-details {
+                width: 17%;
+
+            }
+
+            .container2 {
+                width: 42%;
+            }
+
+            .details h3 {
+                width: 100px;
+            }
+
+            .details p {
+                width: 150px;
+                margin-left: 10px;
+            }
+
+            .detail h3 {
+                width: 130px;
+            }
+
+            .detail p {
+                width: 150px;
+                margin-left: 10px;
+            }
+
+            #detai h3 {
+                width: 140px;
+            }
+
+            #detai p {
+                width: 150px;
+                margin-left: 10px;
+            }
+
+
+
+
+            #input {
+                margin-left: 30px;
+                margin-top: 10px;
+                line-height: 25px;
+            }
+
+            #deleteAcc {
+                background-color: #ffff;
+                width: 43%;
+                height: 60vh;
+            }
+
+            .checkbox {
+
+                width: 270px;
+                margin-left: 100px;
+            }
+
+            .button-delete button {
+                width: 280px;
+
+            }
+
+
+            .textdele p {
+                width: 290px;
+
+            }
+        }
+
+        @media (max-width:920px) {
+
+            .acc-informa {
+                margin-left: 60px;
+            }
+
+            /* 
+            input {
+                width: 70%
+            } */
+
+            .container h1 {
+                margin-left: 60px;
+            }
+
+            .acc-details {
+                width: 17%;
+
+            }
+
+            .container2 {
+                width: 40%;
+            }
+
+            .details h3 {
+                width: 100px;
+            }
+
+            .details p {
+                width: 150px;
+                margin-left: 5px;
+            }
+
+            .detail h3 {
+                width: 130px;
+            }
+
+            .detail p {
+                width: 130px;
+                margin-left: 5px;
+            }
+
+            /* #detai h3 {
+                width: 150px;
+            } */
+
+            #detai p {
+                width: 150px;
+                margin-left: 10px;
+            }
+
+
+
+
+            #input {
+                margin-left: 30px;
+                margin-top: 10px;
+                line-height: 25px;
+            }
+
+            #deleteAcc {
+                background-color: #ffff;
+                width: 40%;
+                height: 60vh;
+            }
+
+            .checkbox {
+
+                width: 260px;
+                margin-left: 80px;
+            }
+
+            .button-delete button {
+                width: 260px;
+                margin-left: 80px;
+            }
+
+            .textdele {
+                margin-left: 80px;
+
+            }
+
+            .textdele p {
+                width: 260px;
+
+            }
+        }
+
+        @media (max-width:899px) {
+            .acc-informa {
+                margin-left: 60px;
+            }
+
+            /* input {
+                width: 70%
+            } */
+
+            .container h1 {
+                margin-left: 60px;
+            }
+
+            .acc-details {
+                width: 17%;
+
+            }
+
+            .container2 {
+                width: 39%;
+            }
+
+            .details h3 {
+                width: 100px;
+            }
+
+            .details p {
+                width: 130px;
+                margin-left: 20px;
+            }
+
+            .detail h3 {
+                width: 130px;
+            }
+
+            .detail p {
+                width: 100px;
+                margin-left: 22px;
+            }
+
+            /* #detai h3 {
+                width: 150px;
+            } */
+
+            #detai p {
+                width: 150px;
+                margin-left: 10px;
+            }
+
+
+
+
+            #input {
+                margin-left: 30px;
+                margin-top: 10px;
+                line-height: 25px;
+            }
+
+            #deleteAcc {
+                background-color: #ffff;
+                width: 39%;
+                height: 60vh;
+            }
+
+            .checkbox {
+
+                width: 250px;
+                margin-left: 80px;
+            }
+
+            .button-delete button {
+                width: 250px;
+                margin-left: 80px;
+            }
+
+            .textdele {
+                margin-left: 80px;
+
+            }
+
+            .textdele p {
+                width: 250px;
+
+            }
+        }
+
+        @media (max-width:877px) {
+            .textdele {
+                margin-left: 40px;
+
+            }
+
+            .checkbox {
+                margin-left: 40px;
+            }
+
+            .button-delete button {
+                margin-left: 40px;
+            }
+        }
+
+        @media (max-width:820px) {
+            .acc-informa {
+                margin-left: 60px;
+            }
+
+            /* input {
+                width: 70%
+            } */
+
+            .container h1 {
+                margin-left: 60px;
+            }
+
+            .acc-details {
+                width: 20%;
+
+            }
+
+            .container2 {
+                width: 37%;
+            }
+
+            .details h3 {
+                width: 100px;
+            }
+
+            .details p {
+                width: 130px;
+                margin-left: 20px;
+            }
+
+            .detail h3 {
+                width: 130px;
+            }
+
+            .detail p {
+                width: 100px;
+                margin-left: 22px;
+            }
+
+            /* #detai h3 {
+                width: 150px;
+            } */
+
+            #detai p {
+                width: 150px;
+                margin-left: 10px;
+            }
+
+
+
+
+            #input {
+                margin-left: 30px;
+                margin-top: 10px;
+                line-height: 25px;
+            }
+
+            #deleteAcc {
+                background-color: #ffff;
+                width: 38%;
+                height: 60vh;
+            }
+
+            .checkbox {
+
+                width: 230px;
+                /* margin-left: 60px; */
+            }
+
+            .button-delete button {
+                width: 230px;
+                /* margin-left: 60px; */
+            }
+
+            /* .textdele {
+                margin-left: 60px;
+
+            } */
+
+            .textdele p {
+                width: 240px;
+
+            }
+        }
+
+        @media (max-width:680px) {
+            .acc-details {
+                display: none;
+            }
+
+            #deleteAcc {
+                background-color: #ffff;
+                width: 100%;
+                height: 60vh;
+            }
+
+            .container {
+                background-color: white;
+                width: 100%;
+                height: 40px;
+                
+            }
+
+            .container2 {
+                background-color: #ffff;
+                width: 100%;
+                height: 100vh;
+            }
+
+            .textdele {
+                margin-top: 50px;
+                margin-left: 100px;
+
+            }
+
+            .checkbox {
+                width: 450px;
+                ;
+                margin-left: 100px;
+            }
+
+            .button-delete button {
+                width: 500px;
+                margin-top: 20px;
+                margin-left: 100px;
+
+            }
+
+            .textdele h2 {
+                width: 500px;
+            }
+
+            .textdele h3 {
+                width: 500px;
+            }
+
+            .textdele p {
+                width: 500px;
+
+            }
+
+            .container h1 {
+                font-size: 20px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: 700;
+                color: #1c1d1f;
+                margin-top: 20px;
+                margin-left: 100px;
+            }
+
+
+            .input {
+                width: 90%;
+                height: 30px;
+                padding: 10px;
+                outline: none;
+                border: 1px solid rgba(0, 0, 0, 0.37);
+                border-radius: 2px;
+            }
+        }
+
+
+        @media (max-width : 1115px) {
+            .about1 {
+                display: none;
+            }
+
+            .copy hr {
+                width: 37.7%;
+            }
+
+        }
+
+        @media (max-width : 959px) {
+            .long button {
+                width: 80px;
+                height: 40px;
+            }
+
+            .long input {
+                width: 200px;
+                height: 40px;
+            }
+
+            .copy hr {
+                width: 35%;
+            }
+        }
+
+        @media (max-width : 959px) {
+            .bottom {
+                height: 70vh;
+            }
+
+            .copy hr {
+                width: 33%;
+            }
+        }
+
+        @media (max-width : 768px) {
+            .footer {
+                display: none;
+            }
+        }
+
+
+
+
+       
+
+
+        /* navbar */
+        @media (max-width : 1115px){
+    .about1{
+        display: none;
+    }
+    .copy hr{
+        width: 37.7%;
+      }
+      
+  }
+  @media (max-width : 959px){
+    .long button{
+        width: 80px;
+        height: 40px;
+    }
+    .long input{
+        width: 200px;
+        height: 40px;
+    }
+    .copy hr{
+        width: 35%;
+      }
+  }
+  @media (max-width : 959px){
+    .bottom{
+        height: 70vh;
+    }
+    .copy hr{
+        width: 33%;
+      }
+  }
+ 
+  @media (max-width : 768px){
+    .footer{
+        display: none;
+    }
+    #background2{
+        display:none;
+    }
+  }
+      
+
+
+    /* dropdown */
+@media (max-width:1115px){
+   .mylogo{
+      margin-left:0px;
+    }
+    .searchInput input{
+        height:40px;
+        width:300px;
+      }
+      .searchInput button{
+         width:40px;
+         height:40px;
+      }
+       #login{
+      width:100px;
+      height:60px;
+      margin-left:5px;
+      padding-left:10px;
+       }
+}
+@media (max-width:1049px){
+.store button{
+        width:90px;
+        height:60px;
+            }
+}
+@media (max-width:1017px){
+  #butts{
+        color: #ffffff;
+      width:140px;
+      }
+      #home{
+        padding:0px;
+      }
+      #computer{
+        padding:3px;
+      }
+      #babything{
+        padding:3px;
+              }
+      #other{
+        padding:3px;
+              }
+              #phones{
+        padding:3px;
+              }
+      #electronic{
+        padding:3px;
+              }
+      #fashion{
+        padding:3px;
+              }
+}
+@media (max-width:1017px){
+  #butts{
+        color: #ffffff;
+      width:140px;
+      }
+      #home{
+        padding:5px;
+      }
+      #computer{
+        padding:5px;
+      }
+      #babything{
+       display:none;
+              }
+      #other{
+        display:none;
+              }
+              #phones{
+        padding:5px;
+              }
+      #electronic{
+        padding:5px;
+              }
+      #fashion{
+        padding:5px;
+              }
+}
+@media (max-width:800px) {
+  .mykongaimage{
+      display:none;
+    }
+    .div{
+    width:100%;
+    height:30vh;
+} 
+.caro img{
+      width:100%;
+      height:30vh;
+    } 
+    #ground{
+    width:100%;
+    height:100vh;
+    
+}
+.hhhh{
+  width:90%;
+}
+.tttt{
+  width:90%;
+}
+.hhhh img{
+      width:90%;
+      height:30vh;
+      margin-top:10px;
+      box-shadow:3px 3px 3px 3px rgba(0, 0, 0, 0.185);
+    }
+    .tttt img{
+      width:90%;
+      height:30vh;
+      margin-top:10px;
+      box-shadow:3px 3px 3px 3px rgba(0, 0, 0, 0.185);
+    }
+    #background{
+        width:100%;
+        height:100vh;
+        margin-top:20px;
+      }
+   
+}
+@media (max-width:989px){
+.store button{
+        width:70px;
+        height:60px;
+            }
+            #login{
+      width:90px;
+      height:60px;
+      margin-left:5px;
+      padding-left:10px;
+       }
+      .mylogo img{
+        width:90px; 
+        height:40px;
+      }
+}
+@media (max-width:919px){
+  .mycart{
+        width:100px;
+        height:45px;
+      }
+      .mylogo img{
+        width:90px; 
+        height:30px;
+      }
+}
+@media (max-width:879px){
+      .mylogo img{
+        width:70px; 
+        height:20px;
+      }
+      .store button{
+        width:50px;
+        height:60px;
+            }
+            #login{
+      width:70px;
+      height:60px;
+      margin-left:5px;
+      padding-left:10px;
+       }
+       .down{
+        width:70px;
+        height:60px;
+      }
+}
+@media (max-width:779px){
+.nav2{
+  display:none;
+}
+.secondnavbar{
+        display:block;
+      }
+      #categories{
+        display:none;
+      }
+      #background{
+        width:100%;
+        height:100vh;
+        margin-top:60px;
+      }
+      #myproduct button{
+
+      }
+}
+@media (max-width:896px){
+    .store button{
+        width:60px;
+        height:60px;
+    }
+}
+@media (max-width:818px){
+    .store button{
+        width:50px;
+        height:60px;
+    }
+}
+@media (max-width:796px){
+    #selling{
+        width:30px;
+        height:60px;
+       
+        line-height:10px;
+    }
+    #Account{
+        width:200px;
+        height:320px;
+       top:60px;
+      }
+
+}
+@media (max-width:434px){
+  #input input{
+        width:85%;
+      }
+}
+@media (max-width:680px){
+
+  #nav5{
+        display:block;
+      }
+}
+@media (max-width:516px){
+  #myall{
+        width:100%;
+        height:300px;
+      
+        
+      }
+      #myall img{
+        width:250px;
+        height:100px;
+
+      }
+      #myall button{
+        width:90%;
+        height:50px;
+       
+      }
+}
+@media (max-width:516px){
+  #myall img{
+        width:100px;
+        height:100px;
+
+      }
+}
+
+    </style>
+</head>
+
+<body>
+            
+   <section>
+   
+    <main class="nav1">
+        <div class="mykongaimage">
+              <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/assets/images/homepage/k_travels2.png" alt=""  width="100px">
+            <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/assets/images/homepage/konga_pay.png" alt=""  width="100px">
+            <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/assets/images/homepage/new_konga_drinks.png" alt=""  width="100px">
+            <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/assets/images/homepage/konga_health.png" alt=""  width="100px">
+            <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/assets/images/homepage/k_express2.png" alt=""  width="100px">
+            <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/assets/images/homepage/new_konga_groceries.png" alt=""  width="100px">
+            <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1699612500/assets/images/homepage/kongaTV.png" alt=""  width="100px">
+        </div>
+        
+      </main>
+     
+         <main>
+          <div id="nav2" class="nav2">
+            <div class="navbars">
+              <div class="mylogo">
+                <img src="https://www.konga.com/_next/static/images/62f8a0d88e07573b4d46735aa24f3f04.png" alt="" width="110px" height="40px">
+                <div class="store">
+                  <button>Store <br>locator</button>
+                  <button id="selling">Sell on <br> konga</button>
+                  </div>
+                </div>
+                <div class="searchInput">
+                  <input type="search"  placeholder="    Search for product,brand and categories">
+                  <button><img src="search.png" alt="" width="15px"></button>
+                  </div>
+               <div class="help">
+                <div class="down">
+                  <span class="material-symbols-outlined">contact_support</span>Help<span class="material-symbols-outlined">expand_more</span>
+                  <div class="Contact">
+                    <div class="konga">FAQs</div> 
+                    <div class="konga">Contact Us</div>
+                    <div class="konga">Track Orders</div>
+                   <div class="konga">Konga Return Policy</div> 
+                  </div>
+                </div>
+                <div id="login">
+                  My <br> Account 
+                  <span class="material-symbols-outlined">expand_more</span>
+                  <div id="Account">
+                      <div class="konganame">
+                          Hi <span id="myname"></span>
+                      </div> 
+                    <div class="konga">
+                      <span class="material-symbols-outlined">
+                          person
+                          </span>
+                      Profile
+                    </div>
+                    <div class="konga">
+                      <span class="material-symbols-outlined">
+                          border_style
+                          </span>
+                      My Orders
+                    </div>
+                   <div class="konga">
+                      <span class="material-symbols-outlined">
+                          favorite
+                          </span>
+                      My Saved Items
+                   </div> 
+                   <div class="konga">
+                      <span class="material-symbols-outlined">
+                          location_on
+                          </span>
+                      Track Items
+                   </div> 
+                   <div class="konga">
+  
+                      <span class="material-symbols-outlined">
+                          account_balance_wallet
+                          </span>
+                      My Wallet
+                   </div> 
+                   <div id="kangas" class="konga">
+                      <span class="material-symbols-outlined">
+                          move_item
+                          </span>
+                      LogOut
+                   </div> 
+                  </div>
+              </div>
+                </div>
+                <div class="mycart">
+                  <div>
+                  <img src="https://github.com/karimot1/public/blob/master/cart.png?raw=true" alt="" width="30px" height="35px">
+                <button id="mycart">My cart</button>
+                </div>
+                <div id="addtocart"></div>
+                </div>
+             </div>
+             </div>
+  
+             <div id="nav5">
+              <div id="menu">
+              <button><span class="material-symbols-outlined">home</span> <br> Home</button>
+              <button><span class="material-symbols-outlined">sell</span><br> Deals</button>
+              <button><span class="material-symbols-outlined">shopping_cart</span> <br> carts</button>
+              <button><span class="material-symbols-outlined">menu</span><br>more</button>
+              </div>
+             </div>
+        </main>
+   
+ 
+        <main>
+         <div id="categories">
+          <div  id="butts">
+             All Categories<span class="material-symbols-outlined">menu</span>
+            <div id="categoriesdropdown">
+              <div>Computers and Accessories</div> 
+              <div>Phones and Tablets</div>
+              <div>Electronics</div>
+              <div>Konga Fashion</div>
+              <div>Home and Kitchen</div>
+              <div>Baby, Kids and Toys</div>
+              <div>Other Categories</div>
+              <div>Groceries</div>
+              <div>Intel 11th Gen Campaign</div>
+             </div>
+          </div>
+          <div id="computer">
+          Computer and Accessories
+          <div id="accessories">
+            <div class="allitems">
+            <div class="item1">
+              <h1>Laptops</h1>
+            <p>Mini Laptops and Netbooks</p>
+            <p>Notebooks</p>
+            <p>Ultrabooks</p>
+            <p>Hybrid PCs</p>
+            <p>Macbooks</p>
+            </div>
+            <div class="item1">
+              <h1>Desktop and Monitors</h1>
+              <p>CPUs</p>
+              <p>All In Ones</p>
+              <p>Monitors</p>
+              <p>UPS</p>
+              <p>Servers</p>
+              <p>Desktop Bundles</p>
+            </div>
+            <div class="item1">
+              <h1>Computing Accessories</h1>
+              <p>Computer Peripherals</p>
+              <p>Bags, Cases, Covers & Sleeves</p>
+              <p>Laptop & Desktop Accessories</p>
+              <p>Storage Devices</p>
+            </div>
+            <div class="item1">
+              <h1>Printers, Scanners & Accessories</h1>
+              <p>Printers</p>
+              <p>Scanners</p>
+              <p> Inks, Toners & Cartridges</p>
+  
+            </div>
+            <div class="item1">
+              <h1> Wifi & Networking</h1>
+              <p>Switches</p>
+              <p>Routers</p>
+              <p>Modems</p>
+              <p>Networking Peripherals</p>
+            </div>
+            <div class="item1">
+              <h1>PC Gaming</h1>
+              <p>PC Games</p>
+              <p>PC Gaming Accessories</p>
+            </div>
+            <div class="item1">
+              <h1>Software</h1>
+              <p>Office & Business</p>
+              <p>Operating Systems</p>
+              <p>Security & Utilities</p>
+            </div>
+            <div class="item1">
+              <h1>Projectors</h1>
+            </div>
+            </div>
+  
+            <div class="itemimage">
+              <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/customcmsmenu/item/comp21.png" alt="">
+            </div>
+          </div>
+  
+          </div>
+          <div id="phones">
+            Phones and Tablets
+            <div id="tablets">
+              <div class="allitems">
+              <div class="item2">
+                <h1>Mobile Phones</h1>
+                <p> Smartphones</p>
+                <p>Feature Phones</p>
+              </div>
+              <div class="item2">
+                <h1>Mobile Phone Accessories</h1>
+                <p>Cables</p>
+                <p>Cases & Covers</p>
+                <p>Screen Protectors</p>
+                <p>Chargers & Power Banks</p>
+                <p>Earphones & Headsets</p>
+                <p>Smartwatches & Bands</p>
+                <p>Clips, Holders & Stands</p>
+                <p>Batteries</p>
+              </div>
+              <div class="item2">
+                <h1>Tablets</h1>
+                <p>Android</p>
+                <p>iOS</p>
+                <p>Windows</p>
+                <p>Other OS'</p>
+              </div>
+              <div class="item2">
+                <h1>Tablet Accessories</h1>
+                <p>Cases & Covers</p>
+                <p> Holders & Stands</p>
+                <p>Other Accessories</p>
+    
+              </div>
+              <div class="item2">
+                <h1>Shop By Price</h1>
+                <p>Up to 10,000</p>
+                <p>Up to 20,000</p>
+                <p>Up to 30,000</p>
+                <p>Up to 40,000</p>
+                <p>Up to 50,000</p>
+                <p>Up to 60,000</p>
+                <p>60,000 & Above</p>
+              </div>
+              </div>
+              <div class="itemimage">
+                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/customcmsmenu/item/phones21.png" alt="">
+              </div>
+              </div>
+          </div>
+          <div id="electronic">
+            Eletronics 
+            <div id="electro">
+              <div class="allitems">
+              <div class="item1">
+                <h1>Televisions</h1>
+              <p>Smart TVs</p>
+              <p>LED TVs</p>
+              <p>Curved TVs</p>
+              <p>OLED TVs</p>
+              <p>Plasma TVs</p>
+              </div>
+              <div class="item1">
+                <h1>DVD Players and Recorders</h1>
+                <p>DVD Players</p>
+                <p>DVD Recorders</p>
+              </div>
+              <div class="item1">
+                <h1>Cameras</h1>
+                <p>Digital Cameras</p>
+                <p>Professional & SLR Cameras</p>
+                <p>Camcorders & Video Cameras</p>
+                <p>Camera Lenses & Accessories</p>
+                <p>CCTV Cameras</p>
+              </div>
+              <div class="item1">
+                <h1>Accessories</h1>
+                <p>TV Audio</p>
+                <p>Headphones</p>
+                <p> Television Accessories</p>
+                <p>Other Accessories</p>
+                <p>Gaming Accessories</p>
+    
+              </div>
+              <div class="item1">
+                <h1>Home Theatres & Audio Systems</h1>
+                <p>Home Theatre</p>
+                <p>HiFi Systems</p>
+                <p> MP3 Players & Speakers</p>
+              </div>
+              <div class="item1">
+                <h1>Games and Consoles</h1>
+                <p>PS4</p>
+                <p> PS3</p>
+                <p> Xbox One</p>
+                <p>Xbox 360</p>
+                <p>Nintendo Wii</p>
+                <p>Sony PSP</p>
+                <p> PS Vita</p>
+                <p> Nintendo 3DS</p>
+              </div>
+              <div class="item1">
+                <h1>Electronics Bundles</h1>
+              </div>
+              </div>
+    
+              <div class="itemimage">
+                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/customcmsmenu/item/Electronics21.png" alt="">
+              </div>
+              </div>
+          </div>
+          <div id="fashion">
+            Konga Fashions
+            <div id="kongo">
+              <div class="allitems">
+              <div class="item3">
+              <h1> Women's Wear</h1>
+              <p>Dresses</p>
+              <p>Tops</p>
+              <p>Trousers</p>
+              <p>Jumpsuits & Playsuits</p>
+              <p>Suits & Blazers</p>
+              <p>Skirts</p>
+              <p>Co-ordinates</p>
+              <p>Lingerie & Sleepwear</p>
+              <p>Ready to Wear</p>
+              </div>
+              <div class="item3">
+                <h1>Women's Shoes</h1>
+                <p>Ballerinas & Flats</p>
+                <p>Heels</p>
+                <p>Sandals & Slippers</p>
+                <p>Wedges</p>
+                <p>Sport Shoes</p>
+                <p>Shoes & Bags</p>
+              </div>
+              <div class="item3">
+                <h1>Women's Accessories</h1>
+                <p>Bags</p>
+                <p>Belts</p>
+                <p>Purses & Clutches</p>
+                <p>Wallets</p>
+                <p>Jewellery</p>
+                <p>Hats & Scarves</p>
+              </div>
+              <div class="item3">
+                <h1>Men's Wear</h1>
+                <p>Shirts</p>
+                <p>Polos</p>
+                <p>T-Shirts</p>
+                <p>Jeans</p>
+                <p>Trousers & Shorts</p>
+                <p>Suits, Blazers & Jackets</p>
+                <p>Pyjamas</p>
+                <p>Jerseys</p>
+                <p>Traditional Wear</p>
+              </div>
+              <div class="item3">
+                <h1>Men's Shoes</h1>
+                <p>Casual Shoes</p>
+                <p>Formal Shoes</p>
+                <p>Slippers & Sandals</p>
+                <p>Shoe Care & Accessories</p>
+              </div>
+              <div class="item3">
+                <h1>Men's Accessories</h1>
+                <p>Belts & Wallets</p>
+                <p>Socks & Underwear</p>
+                <p>Caps & Hats</p>
+                <p>Jewellery</p>
+                <p>Bags</p>
+                <p>Ties & Cufflinks</p>
+              </div>
+              <div class="item3">
+                <h1>Watches</h1>
+                <p>Men's Watches</p>
+                <p>Women's Watches</p>
+                <p>Unisex Watches</p>
+              </div>
+              <div class="item3">
+                <h1>Style Finder for Women</h1>
+                <p>Monochrome</p>
+                <p>Floral</p>
+                <p>Bold in Black</p>
+                <p>9 to 5 Chic</p>
+                <p>Trending Now</p>
+                <p>Red Hot</p>
+              </div>
+              <div class="item3">
+                <h1>Style Finder for Men</h1>
+                <p>Monochrome</p>
+                <p>Prints</p>
+                <p> Wardrobe Basics</p>
+                <p> Men in Blue</p>
+                <p> Business Look</p>
+              </div>
+              <div class="item3">
+                <h1>Plus Size</h1>
+              </div>
+              <div class="item3">
+                <h1>Under 5K Shop</h1>
+                <p>  Men's Fashion Under 5K</p>
+                <p> Women's Fashion Under 5K</p>
+              </div>
+              <div class="item3">
+                <h1>Wedding Shop</h1>
+                <p> Women's Wedding Shop
+                  <p>Men's Wedding Shop
+              </div>
+              </div>
+    
+              <div class="itemimage">
+                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/customcmsmenu/item/fashion21.png" alt="">
+              </div>
+              </div>
+          </div>
+          <div id="home"> 
+            Home and Kitchen
+            <div id="kitchen">
+              <div class="allitems">
+              <div class="item3">
+                <h1>Large Appliances</h1>
+                <p> Air Conditioners & Coolers</p>
+                <p> Fans</p>
+                <p> Freezers</p>
+                <p>  Washers & Dryers</p>
+                <p>  Refrigerators</p>
+                <p>  Cookers & Ovens</p>
+                <p>  Water Dispensers</p>
+                <p>  Vacuum Cleaners</p>
+              </div>
+              <div class="item3">
+              <h1>Small Appliances</h1>
+              <p>Blenders, Juicers & Mixers</p>
+              <p>Hot Plates & Burners</p>
+              <p>Irons & Steamers</p>
+              <p>Processors & Mincers</p>
+              <p>Toasters & Sandwich Makers</p>
+              <p>Deep Fryers & Rice Cookers</p>
+              <p>Electric Kettles</p>
+              <p>Microwaves</p>
+              <p>Yam Pounder</p>
+              </div>
+              <div class="item3">
+                <h1>Home Furnishings</h1>
+                <p>Bed & Bathroom Furnishings</p>
+                <p>Curtains & Blinds</p>
+                <p>Decor</p>
+                <p>Light Fixtures</p>
+                <p>Rugs & Carpets</p>
+                <p>Housekeeping & Pet Supplies</p>
+              </div>
+              <div class="item3">
+                <h1>Kitchen & Dining</h1>
+                <p>  Cook and Bakeware</p>
+                <p>  Dining</p>
+                <p>  Kitchen Utensils</p>
+                <p>  Cooker Hoods & Ventilators</p>
+              </div>
+              <div class="item3">
+                <h1>Top Brands</h1>
+                  <p>LG</p>
+                    <p> Samsung</p>
+                    <p>Polystar</p>
+                    <p>Scanfrost</p>
+                    <p>Hisense</p>
+                    <p>Saisho</p>
+                    <p>Haier Thermocool</p>
+                    <p>Master Chef</p>
+              </div>
+              <div class="item3">
+                <h1>PC Gaming</h1>
+                <p>PC Games</p>
+                <p>PC Gaming Accessories</p>
+              </div>
+              <div class="item3">
+                <h1>Furniture</h1>
+                <p>Living Room Furniture</p>
+                <p>Bedroom Furniture</p>
+                <p>Office Furniture</p>
+                <p>Kitchen & Dining Furniture</p>
+              </div>
+              <div class="item3">
+                <h1>Accessories for Small & Large Appliances</h1>
+              </div>
+              </div>
+   
+              <div class="itemimage">
+                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/customcmsmenu/item/home21.png" alt="">
+              </div>
+              </div>
+          </div>
+          <div id="babything">
+            Baby,kids and Toys
+            <div id="toy">
+              <div class="allitems">
+              <div class="item2">
+                <h1> Fashion for Girls</h1>
+                <p>Sets</p>
+                <p>Dresses</p>
+                <p>  Tops, Jackets, & Sweatshirts</p>
+                <p>  Denim, Trousers & Leggings</p>
+                <p>Underwear & Socks</p>
+                <p> Watches</p>
+                <p> Shoes</p>
+                <p>Sleepwear</p>
+              </div>
+              <div class="item2">
+                <h1>Bodysuits & Playsuits</h1>
+                <p>Polos & T-Shirts</p>
+                <p>Sets</p>
+                <p>Watches</p>
+                <p> Denim & Trousers</p>
+                <p>Bodysuits & Playsuits</p>
+                <p>Sleepwear</p>
+                <p> Underwear & Socks</p>
+                <p> Shoes</p>
+                <p> Shirts</p>
+              </div>
+              <div class="item2">
+                <h1>Baby Essentials</h1>
+                <p>Bibs & Burp Cloths</p>
+                <p>Bottle Feeding</p>
+                <p>Breastfeeding</p>
+                <p>Pacifiers & Teethers</p>
+                <p>Baby Food & Formula</p>
+                <p>Feeding & Nursing</p>
+              </div>
+              <div class="item2">
+                <h1>Maternity</h1>
+                <p>Maternity Tops & Jackets</p>
+                <p>Maternity Dresses</p>
+                <p>Maternity Trousers & Skirts</p>
+                <p>Maternity Underwear</p>
+                <p>Maternity Accessories</p>
+              </div>
+              <div class="item2">
+                <h1>School Store</h1>
+                <p>Bags & Backpacks</p>
+                <p>Lunchboxes & Waterbottles</p>
+                <p>School Uniform & Accessories</p>
+                <p>School Shoes</p>
+              </div>
+              <div class="item2">
+                <h1>Travel & Safety Gear</h1>
+                <p> Car Seats, Strollers & Carriers</p>
+                <p> Baby Monitors & Safety Gates</p>
+                <p> Mobile Beds & Nets</p>
+                <p> High Chairs & Booster Seats</p>
+              </div>
+              <div class="item2">
+                <h1>Diapering & Daily Care</h1>
+                <p>Daily Care</p>
+                <p>Bathtime Essentials</p>
+                <p>Diapers & Baby Wipes</p>
+                <p>Diaper Bags & Changing Mats</p>
+                <p>Potty Training</p>
+              </div>
+              <div class="item2">
+                <h1> Kids' Beddings & Decor</h1>
+                <p>Bedding</p>
+                <p>Décor Accessories</p>
+                <p>Furniture</p>
+              </div>
+              <div class="item2">
+                <h1>Toys & Activities</h1>
+                <p>Tablets for Kids</p>
+                <p>Educational Toys</p>
+                <p>Activities</p>
+                <p>Bicycles & Ride On</p>
+                <p>Bouncers, Rockers & Swingers</p>
+                <p>Games & Puzzles</p>
+                <p>Play Pens & Play Mats</p>
+                <p>Party Store</p>
+              </div>
+              </div>
+    
+              <div class="itemimage">
+                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/customcmsmenu/item/comp21.png" alt="">
+              </div>
+              </div>
+          </div>
+          <div id="other">
+            Other Categories 
+            <div id="cattt">
+              <div class="allitems">
+              <div class="item4">
+                <h1>Beauty, Health & Personal Care</h1>
+                <p> Makeup</p>
+                <p> Fragrances</p>
+                <p> Hair Centre</p>
+                <p> Health</p>
+                <p> Personal Care</p>
+                <p> Skin Care</p>
+                <p> Sexual Wellness</p>
+                <p> Contraceptives</p>
+                <p> Other Contraceptives & Lubricants</p>
+              </div>
+              <div class="item4">
+                <h1> Sports and Fitness</h1>
+                <p> Fitness</p>
+                <p> Outdoor & Indoor Games</p>
+                <p> Sportswear</p>
+                <p> Football</p>
+                <p> Swimming</p>
+                <p> Boxing</p>
+                <p> Basketball</p>
+              </div>
+              <div class="item4">
+                <h1> Books & Media Library</h1>
+                <p> Books</p>
+                <p> Musical Equipment</p>
+                <p> Keyboard, Pianos & Drums</p>
+                <p> Stage, Studio & Recording Equipment</p>
+                <p> Wind Instruments</p>
+                <p> String Instruments</p>
+                <p> Audio Books</p>
+                <p> African Tales</p>
+              </div>
+              <div class="item4">
+                <h1> Alcoholic Beverages</h1>
+                  <p> Wines</p>
+                  <p> Spirits</p>
+                  <p> Liqueurs & Creams</p>
+                  <p> Whiskey</p>
+                  <p>  Champagne</p>
+              </div>
+              <div class="item4">
+                <h1>Office & School Supplies</h1>
+                <p> Greeting Cards</p>
+                <p> School Supplies</p>
+                <p> Office Supplies</p>
+                <p> Build Your Office</p>
+              </div>
+              <div class="item4">
+                <h1>Generators & Power Solutions</h1>
+                <p> Generators & Accessories</p>
+                <p> Inverters</p>
+                <p> UPS & Surge Protectors</p>
+                <p> Solar & Alternative Energy</p>
+                </div>
+              <div class="item4">
+                <h1>Automotive</h1>
+                <p> Automotive Tools & Accessories</p>
+                <p> Safety and Security</p>
+                <p> Autocare & Maintenance</p>
+                <p> Tyres & Batteries</p>
+                <p> Replacement Parts</p>
+                <p> Hand & Power Tools</p>
+              </div>
+              <div class="item4">
+                <h1> Building & Industrial</h1>
+                <p> Sewing Machines & Accessories</p>
+                <p> Tools</p>
+                <p> Plumbing Materials</p>
+                <p> Construction Materials</p>
+                <p> Paints</p>
+                <p> Electrical Fittings</p>
+              </div>
+              <div class="item4">
+                <h1>Agriculture</h1>
+                <p> Seeds</p>
+                <p> Fertilizers</p>
+                <p> Pesticides & Herbicides</p>
+                <p> Farm Machinery & Equipments</p>
+                <p> Poultry</p>
+              </div>
+              </div>
+    
+              <div class="itemimage">
+                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/customcmsmenu/item/others21.png" alt="">
+              </div>
+              </div>
+          </div>
+         </div> 
+         
+  
+        </main> 
+       
+  
+  
+        <main class="secondnavbar">
+            <div class="nav3">
+              
+              <div class="span">
+                <button onclick="menu()"><span id="cancel" class="material-symbols-outlined">menu</span> <span id="close" class="material-symbols-outlined">close</span></button>
+                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_850,f_auto,fl_lossy,dpr_auto,q_auto/assets/images/content/logo-alternate.png" alt="" width="90px" height="30px">
+              </div>
+    
+              <div class="span2">
+               <button><span class="material-symbols-outlined">storefront</span></button>
+                <button><span class="material-symbols-outlined">shopping_cart</span></button>
+              </div>
+    
+              <div id="menus">
+                <div id="allmenu">
+                  <div id="myid">
+                    <h1 id="username"></h1>
+                    <p id="myemail"></p>
+                  </div>
+                <div id="logsign">
+                  <h4>Account Setting</h4>
+                </div>
+                
+                <div id="location">
+                  <div class="track">
+                    <span  class="material-symbols-outlined">location_on</span>
+                    <div>
+                      <b>Tracks Orders</b><br>
+                    <small>View order status</small>
+                    </div>
+                  </div>
+    
+                  <div class="tracks">
+                    <span class="material-symbols-outlined">grade</span>
+                    <b>Pending Items</b>
+                  </div>
+    
+    
+                  <div class="tracker">
+                    <span class="material-symbols-outlined">sell</span>
+                  <div>
+                    <b>Sell on Konga</b><br>
+                  <small>Join other marchants</small>
+                  </div>
+                </div>
+    
+                <div class="trackor">
+                  <span class="material-symbols-outlined">storefront</span>
+                <div>
+                  <b>Physical stores</b><br>
+                <small>Store around you</small>
+                </div>
+              </div>
+    
+                  </div>
+                  <div id="menucatego">
+                    <div id="mencategories">
+                    Categories
+                </div>
+    
+                <div id="menaccesory">
+                 Computer and Accessories
+                 <span class="material-symbols-outlined">navigate_next</span>
+              </div>
+    
+              <div id="menphone">
+                Phones and Tablets
+                <span class="material-symbols-outlined">navigate_next</span>
+             </div>
+    
+             <div id="menkonga">
+             Konga Fashions
+             <span class="material-symbols-outlined">navigate_next</span>
+           </div>
+    
+           <div id="menhome">
+           Home and Kitchen
+           <span class="material-symbols-outlined">navigate_next</span>
+         </div>
+    
+         <div id="menbaby">
+         Baby,Kids and Toys
+         <span class="material-symbols-outlined">navigate_next</span>
+       </div>
+       <div id="menother">
+        Other Categories
+        <span class="material-symbols-outlined">navigate_next</span>
+      </div>
+      <div id="mengroce">
+        Groceries
+        <span class="material-symbols-outlined">navigate_next</span>
+      </div>
+      <div id="menintel">
+        Intel 11th Gen Campaign
+        <span class="material-symbols-outlined">navigate_next</span>
+      </div>
+    
+      
+                  </div>
+                  <div class="contacts">
+                    <div class="person">
+                      <span class="material-symbols-outlined">
+                        call
+                        </span>
+                        Contact us
+                    </div>
+                    <div class="person">
+                      <span class="material-symbols-outlined">
+                        person_cancel
+                        </span>
+                        Delete Account
+                    </div>
+                    <div id="loged" class="person">
+                      <span class="material-symbols-outlined">
+                        move_item
+                        </span>
+                        LogOut
+                    </div>
+                  </div>
+                </div>
+                
+                </div>
+           
+                
+            </div>
+            
+            <div id="nav4">
+              <div id="icons">
+                <div id="browse">
+                  <span class="material-symbols-outlined">pending</span><br>
+                    <small>Browser All</small>
+                </div>
+                <div id="fashions">
+                  <span class="material-symbols-outlined">apparel</span><br>
+                    <small>Fashions</small>
+                </div>
+                <div id="computers">
+                  <span class="material-symbols-outlined">computer</span><br>
+                    <small>Computers</small>
+                </div>
+                <div id="phone">
+                  <span class="material-symbols-outlined">smartphone</span><br>
+                    <small>Phones</small>
+                </div>
+                <div id="alls">
+                  <span class="material-symbols-outlined">sell</span><br>
+                    <small>All Deals</small>
+                </div>
+              </div>
+              </div>
+    
+              <div id="dropdown3">
+                <div id="ddcategories">
+                  <span class="material-symbols-outlined">chevron_left</span>
+                    <b>Categories</b>
+                </div>
+    
+                <div id="ddaccesory">
+                 Computer and Accessories
+                 <span class="material-symbols-outlined">navigate_next</span>
+              </div>
+    
+              <div id="ddphone">
+                Phones and Tablets
+                <span class="material-symbols-outlined">navigate_next</span>
+             </div>
+    
+             <div id="ddkonga">
+             Konga Fashions
+             <span class="material-symbols-outlined">navigate_next</span>
+           </div>
+    
+           <div id="ddhome">
+           Home and Kitchen
+           <span class="material-symbols-outlined">navigate_next</span>
+         </div>
+    
+         <div id="ddbaby">
+         Baby,Kids and Toys
+         <span class="material-symbols-outlined">navigate_next</span>
+       </div>
+       <div id="ddother">
+        Other Categories
+        <span class="material-symbols-outlined">navigate_next</span>
+      </div>
+      <div id="ddgroce">
+        Groceries
+        <span class="material-symbols-outlined">navigate_next</span>
+      </div>
+      <div id="ddintel">
+        Intel 11th Gen Campaign
+        <span class="material-symbols-outlined">navigate_next</span>
+      </div>
+    
+              </div>
+          </main> 
+   
+            
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    <main class="main">
+
+        <div class="container">
+            <div class="acc-informa">
+                <p id="homeback">Home</p><span> <i class="fa-solid fa-chevron-right" style="color: #000000;"></i></span>
+                <p>My Account </p><span><i class="fa-solid fa-chevron-right" style="color: #000000;"></i></span>
+                <p>My Profile</p>
+            </div>
+            <h1>Account Information</h1>
+        </div>
+
+        <div class="accinfor-back">
+            <div class="acc-details">
+                <div class="details">
+                    <h3><span><i class="fa-regular fa-circle-user" style="color: #000000;"></i></span>
+                        My Profile</h3>
+
+                    <p id="AccountInforma">Account Information</p>
+
+
+                    <p id="deliveryAddress">Delivery Address</p>
+
+                </div>
+                <div class="details">
+                    <h3> <span><i class="fa-solid fa-bag-shopping" style="color: #0e0f10;"></i></i></span>
+                        My Order</h3>
+
+                    <p>Order History</p>
+
+
+                    <p>Pending Ratings</p>
+
+                </div>
+                <div class="details">
+                    <h3> <i class="fa-solid fa-wallet" style="color: #000000;"></i>
+                        <span>My Wallet</span>
+                    </h3>
+
+                    <p>Wallet</p>
+
+                </div>
+                <div class="detail">
+                    <h3> <span><i class="fa-regular fa-circle-user" style="color: #000000;"></i></span>
+                        Konga Prime</h3>
+
+                    <p>Active Prime Plans</p>
+
+                </div>
+                <div id="detai">
+                    <h3> <span><i class="fa-regular fa-circle-user" style="color: #000000;"></i></span>
+                        Delete Account</h3>
+
+                    <p id="accoun">Delete Account</p>
+
+                </div>
+            </div>
+
+
+            <div class="container2" id="contain">
+                <div class="login-login">
+
+                    <h2>Account Information</h2>
+                    <hr>
+                </div>
+                <div id="inputi">
+
+                    <label for="">
+                        <h6>First Name</h6>
+                        <input id="firstname" placeholder="Enter First Name" class="input" type="text">
+                    </label>
+
+                    <label for="">
+                        <h6>Last Name</h6>
+                        <input id="lastname" placeholder="Enter Last Name" class="input" type="text">
+                    </label>
+
+                    <label for="">
+                        <h6>Email Address</h6>
+                        <input id="email" placeholder="Enter Email Address" class="input" type="email">
+                    </label>
+
+                    <label for="">
+                        <h6>Current Password</h6>
+                        <input id="password" placeholder="Enter Phone Number" class="input" type="text">
+                    </label>
+
+                    <label  for="">
+                        <h6>New Password</h6>
+                        <input placeholder="Enter password" class="input" type="password" name="z" id="newPressword">
+
+                    </label>
+                    <label  for="">
+                        <h6>Confirm Password</h6>
+                        <input placeholder="Enter password" class="input" type="password" name="z" id="confirmpressword">
+
+                    </label>
+                    <button id="loginButton">Save change</button>
+                </div>
+            </div>
+
+
+            <div id="deleteAcc">
+                <div class="textdele">
+                    <h2>Delete Account </h2>
+                    <h3>Please Read Carefully</h3>
+                    <p>You are about to request that we permanently delete
+                        your data and close your Kong account. All goods and services
+                        that you have access to
+                        through your account will stop being offered
+                        as soon as it is deleted.</p>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox">
+                    <label for="">Yes, please erase my Konga account
+                        and all of my personal data permanentl.</label>
+                </div>
+                <div class="button-delete">
+                    <button>DELETE MY ACCOUNT</button>
+                </div>
+            </div>
+
+
+            <div class="container2" id="containing">
+                <div class="login-login">
+
+                    <h2>Delivery Address</h2>
+                    <hr>
+                </div>
+                <div id="inputi">
+
+                    <label for="">
+                        <h6>First Name</h6>
+                        <input placeholder="Enter First Name" class="input" type="text">
+                    </label>
+
+                    <label for="">
+                        <h6>Last Name</h6>
+                        <input placeholder="Enter Last Name" class="input" type="text">
+                    </label>
+
+                    <label for="">
+                        <h6>Phone Number</h6>
+                        <input placeholder="Mobile Number" class="input" type="email">
+                    </label>
+
+                    <label for="">
+                        <h6>Street Address</h6>
+                        <input placeholder="Enter Delivery Address" class="input" type="text">
+                    </label>
+
+                    <label id="password" for="">
+                        <h6>Directions (Optional)</h6>
+                        <input placeholder="Directions" class="input" type="password" name="z" id="">
+
+                    </label>
+                    <label id="password" for="">
+                        <h6>City</h6>
+                        <input placeholder="City" class="input" type="password" name="z" id="">
+
+                    </label>
+
+            <label id="password" for="">
+                <h6>City</h6>
+                <select>
+                    <option value="">select</option>
+                    <option value="">ibadan</option>
+                    <option value="">lagos</option>
+                    <option value="">abuja</option>
+                    <option value="">iwo road</option>
+                    <option value="">ring road</option>
+
+                </select>
+            </label>
+            <label id="password" for="">
+                <h6>LGA (Local Govt.Area)</h6>
+                <select>
+                    <option value="">select</option>
+                    <option value=""> </option>
+                </select>
+            </label>
+            <button id="loginButton">Create An Account</button>
+        </div>
+    </div>
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+    </main>
+    <div class="footer">
+        <div class="top">
+            <div class="top-flex">
+                <div class="email">
+
+                    <div class="icon">
+                        <iconify-icon icon="ion:mail" style="color: rgb(8,8,8);" width="20"></iconify-icon>
+                    </div>
+
+                    <div class="text">
+                        <h2>EMAIL SUPPORT</h2>
+                        <p>help@konga.com</p>
+                    </div>
+
+                </div>
+
+                <div class="email">
+                    <div class="icon">
+                        <iconify-icon icon="mdi:phone" style="color: rgb(8,8,8);" width="20"></iconify-icon>
+                    </div>
+
+
+
+                    <div class="text">
+                        <h2>PHONE SUPPORT</h2>
+                        <p>0708 063 5700, 01 888 3435</p>
+                    </div>
+
+
+                </div>
+
+                <div class="email">
+                    <div class="icon">
+                        <iconify-icon icon="jam:whatsapp" style="color: rgb(8,8,8);" width="20"></iconify-icon>
+                    </div>
+
+                    <div class="text">
+                        <h2>WHATSAPP</h2>
+                        <p>0907 0038 400, 0809 460 5555</p>
+                    </div>
+
+                </div>
+
+                <div class="about1">
+                    <div class="text1">
+                        <h2>GET LATEST DEALS</h2>
+                        <p>Our best promotions sent to your inbox.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="long">
+                    <input required type="email" name="" id="" placeholder="Email Address"> <button>Subscribe</button>
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+        <div class="bottom">
+            <div class="bottom-flex">
+                <div class="flex">
+
+                    <div class="allabout">
+                        <div class="about">
+                            <h2>ABOUT KONGA</h2>
+                            <p>Contact Us</p>
+                            <p>About Us</p>
+                            <p>Careers</p>
+                            <p>Our Blog</p>
+                            <p>Forum</p>
+                            <p>Terms & Conditions</p>
+                        </div>
+
+                        <div class="about">
+                            <h2> PAYMENT</h2>
+                            <p>KongaPay</p>
+                            <p>Wallet</p>
+                            <p>Verve</p>
+                            <p>Mastercard</p>
+                            <p>Visa</p>
+
+                        </div>
+
+                        <div class="about">
+                            <h2>BUYING ON KONGA</h2>
+                            <p>Buyer Safety Centre</p>
+                            <p>FAQs</p>
+                            <p>Delivery</p>
+                            <p>Konga Return Policy</p>
+                            <p>Digital Services</p>
+                            <p>Bulk Purchase</p>
+                        </div>
+
+                        <div class="about">
+                            <h2>MORE INFO</h2>
+                            <p>Site Map</p>
+                            <p>Track My Order</p>
+                            <p>Privacy Policy</p>
+                            <p>Authentic Items Policy</p>
+
+                        </div>
+
+                        <div class="about">
+                            <h2>MAKE MONEY ON KONGA</h2>
+                            <p>Become a Konga Affiliate</p>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                    <div class="download">
+                        <h2>DOWNLOAD & CONNECT WITH US</h2>
+
+                        <div class="flex-apple">
+                            <div class="apple">
+                                <iconify-icon icon="ic:outline-apple" style="color: white;" width="35"></iconify-icon>
+                                <div class="text">
+                                    <span>Download on</span>
+                                    <h4>App Store</h4>
+                                </div>
+
+                            </div>
+                            <div class="apple">
+                                <iconify-icon icon="ant-design:android-filled" style="color: white;"
+                                    width="32"></iconify-icon>
+                                <div class="text">
+                                    <span>Download on</span>
+                                    <h4>Google Play</h4>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="connect">
+                            <h2>CONNECT WITH US</h2>
+
+                            <div class="icons">
+                                <div class="circle">
+                                    <span class="facebook"><iconify-icon icon="ri:facebook-fill"
+                                            width="25"></iconify-icon></span>
+                                </div>
+
+                                <div class="circle">
+                                    <span class="twitter"><iconify-icon icon="prime:twitter"
+                                            width="25"></iconify-icon></span>
+                                </div>
+
+                                <div class="circle">
+                                    <span class="instagram">
+                                        <iconify-icon class="f" icon="bi:instagram" width="25"></iconify-icon>
+                                        <iconify-icon class="k" icon="skill-icons:instagram" width="25"></iconify-icon>
+                                    </span>
+                                </div>
+
+                                <div class="circle">
+                                    <span class="youtube"><iconify-icon icon="ri:youtube-fill"
+                                            width="30"></iconify-icon></span>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="last">
+
+                <div class="copy">
+                    <hr>
+                    <p>Copyright © 2023 Konga.com. All rights reserved</p>
+                    <hr>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    </section>
+</body>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</html>
+<!-- <script src="myacc.js"></script> -->
+<script>
+   
+    const firebaseConfig = {
+      apiKey: "AIzaSyC4T2v9tnrjU-HNvYsQCJxmC7HeQifC2w0",
+      authDomain: "project-17c72.firebaseapp.com",
+      projectId: "project-17c72",
+      storageBucket: "project-17c72.appspot.com",
+      messagingSenderId: "87813751799",
+      appId: "1:87813751799:web:dc82f9d3754c981f6464f2"
+    };
+  
+    // Initialize Firebase
+    const app = firebase.initializeApp(firebaseConfig);
+
+    var provider = new firebase.auth.GoogleAuthProvider();
+  
+  const appVerifier = window.recaptchaVerifier;
+  </script>
+ <script>
+   let deleteAcc = document.getElementById('deleteAcc')
+let deliveryAddress = document.getElementById('deliveryAddress')
+let AccountInforma = document.getElementById('AccountInforma')
+let contain = document.getElementById('contain')
+let containing = document.getElementById('containing')
+let accoun = document.getElementById('accoun')
+let homeback = document.getElementById('homeback')
+homeback.addEventListener('click', function () {
+    window.location.href = 'dashbroad.html'
+})
+deleteAcc.style.display = 'none'
+containing.style.display = 'none'
+accoun.addEventListener('click', function () {
+    deleteAcc.style.display = 'block'
+    contain.style.display = 'none'
+    containing.style.display = 'none'
+})
+AccountInforma.addEventListener('click', function () {
+    deleteAcc.style.display = 'none'
+    contain.style.display = 'block'
+})
+deliveryAddress.addEventListener('click', function () {
+    contain.style.display = 'none'
+    containing.style.display = 'block'
+})
+
+
+let menus = document.getElementById('menus')
+let cancel = document.getElementById('cancel')
+let closes = document.getElementById('close')
+let input = document.getElementById('input')
+menus.style.display = 'none'
+closes.style.display = 'none'
+let mymenus;
+function menu(){
+if (mymenus == 1) {
+menus.style.display = 'none'
+cancel.style.display = 'block'
+closes.style.display = 'none'
+mymenus = 0
+} else {
+menus.style.display = 'block'
+closes.style.display = 'block'
+cancel.style.display = 'none'
+mymenus = 1
+}
+}
+
+let browse = document.getElementById('browse')
+let dropdown3 = document.getElementById('dropdown3')
+let nav4 = document.getElementById('nav4')
+let ddcategories = document.getElementById('ddcategories')
+dropdown3.style.display = 'none'
+browse.addEventListener('click', function() {
+dropdown3.style.display = 'block'
+nav4.style.display = 'none'
+input.style.display = 'none'
+})
+ddcategories.addEventListener('click', function(){
+dropdown3.style.display = 'none'
+nav4.style.display = 'block'
+input.style.display = 'block'
+})
+
+
+
+let firstname = document.getElementById('firstname')
+let lastname = document.getElementById('lastname')
+let email = document.getElementById('email')
+let number = document.getElementById('number')
+let password = document.getElementById('password')
+let confirmpressword = document.getElementById('confirmpressword')
+let newPressword = document.getElementById('newPressword')
+let curruser;
+function myuser() {
+let detail = {
+    firstname:firstname.value,
+    lastname:lastname.value,
+    email:email.value,
+    password:password.value,
+}
+firebase.auth().onAuthStateChanged((user) => {
+if (user) {
+// User is signed in, see docs for a list of available properties
+// https://firebase.google.com/docs/reference/js/v8/firebase.User
+var uid = user.uid;
+curruser=user
+firstname =`${user.displayName}`
+password =`${user.displayName}`
+email = `${user.displayName}`
+// ...
+} else {
+alert('it not working')
+}
+});
+
+}
+myuser()
+
+
+
+
+let myname = document.getElementById('myname')
+let username = document.getElementById('username')
+let myemail = document.getElementById('myemail')
+function dispusers() {
+firebase.auth().onAuthStateChanged((user) => {
+if (user) {
+// User is signed in, see docs for a list of available properties
+// https://firebase.google.com/docs/reference/js/v8/firebase.User
+var uid = user.uid;
+console.log(user)
+myname.innerHTML =`${user.displayName.split(' ')[1]}`
+username.innerHTML =`${user.displayName.split(' ')[1].toUpperCase()}`
+myemail.innerHTML = `${user.email}`
+// ...
+} else {
+alert('you are not login ur page')
+
+window.location.href = 'login.html'
+}
+});
+}
+dispusers()
+
+let kangas = document.getElementById('kangas')
+
+kangas.addEventListener('click', function () {
+  firebase.auth().signOut().then(() => {
+        alert('sign out')
+        window.location.href = 'index.html'
+}).catch((error) => {
+  alert('u can never log out')
+  console.log(error)
+});
+})
+
+let loged = document.getElementById('loged')
+
+loged.addEventListener('click', function () {
+  firebase.auth().signOut().then(() => {
+        alert('sign out')
+        window.location.href = 'index.html'
+}).catch((error) => {
+  alert('u can never log out')
+  console.log(error)
+});
+})
+
+
+let currentUser = JSON.parse(localStorage.getItem('currentUser'))
+console.log(currentUser);
+let namme = currentUser.displayName
+ namme = namme.split(' ')
+console.log(namme);
+firstname.value = namme[0]
+lastname.value = namme[1]
+email.value = currentUser.email
+password.value = currentUser.password
+</script> 
